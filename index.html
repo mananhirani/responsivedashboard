@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsivedashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Main container -->
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <div class="bg-blue-800 text-white w-64 p-4 space-y-6 hidden md:block">
+      <h2 class="text-2xl font-semibold text-center">Dashboard</h2>
+      <ul class="space-y-4">
+        <li><a href="#" class="block p-2 hover:bg-blue-700 rounded-md">Dashboard</a></li>
+        <li><a href="#" class="block p-2 hover:bg-blue-700 rounded-md">Analytics</a></li>
+        <li><a href="#" class="block p-2 hover:bg-blue-700 rounded-md">Settings</a></li>
+        <li><a href="#" class="block p-2 hover:bg-blue-700 rounded-md">Profile</a></li>
+        <li><a href="#" class="block p-2 hover:bg-blue-700 rounded-md">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-1 flex flex-col">
+
+      <!-- Header -->
+      <header class="bg-white p-4 shadow-md flex justify-between items-center">
+        <div class="text-xl font-semibold">Welcome to the Dashboard</div>
+        <div class="flex space-x-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">User</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Notifications</button>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="p-6 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Total Sales</h3>
+            <p class="text-xl mt-2">500</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Visitors</h3>
+            <p class="text-xl mt-2">1,200</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold">Revenue</h3>
+            <p class="text-xl mt-2">$15,000</p>
+          </div>
+
+        </div>
+
+        <div class="bg-white p-4 shadow-md rounded-lg">
+          <h3 class="text-lg font-semibold">Recent Activity</h3>
+          <ul class="space-y-4 mt-4">
+            <li class="flex justify-between">
+              <span>User signed up</span>
+              <span class="text-gray-500 text-sm">2 minutes ago</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Payment received</span>
+              <span class="text-gray-500 text-sm">30 minutes ago</span>
+            </li>
+            <li class="flex justify-between">
+              <span>New order placed</span>
+              <span class="text-gray-500 text-sm">1 hour ago</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
